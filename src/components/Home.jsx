@@ -10,14 +10,14 @@ function Home() {
     const projectCount = useRef(null);
 
     const animationClientsCount = () => {
-        animate(0, 100, {
+        animate(0, 500, {
             duration: 1,
             onUpdate: (v) => (clientCount.current.textContent = v.toFixed()), 
         })
     }
 
     const projectClientsCount = () => {
-        animate(0, 500, {
+        animate(0, 10, {
             duration: 1,
             onUpdate: (v) => (projectCount.current.textContent = v.toFixed()), 
         })
@@ -75,7 +75,7 @@ function Home() {
             <p>
               +<motion.span ref = {clientCount} whileInView = {animationClientsCount}></motion.span>
             </p>
-            <span>Clients Worldwide</span>
+            <span>DSA Questions Solved</span>
           </article>
 
           <aside>
