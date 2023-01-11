@@ -37,10 +37,18 @@
         &:nth-child(odd) {
             text-align: right;
 
+            &::after {
+                animation: upanddown 0.3s infinite ease-in alternate;
+
+
+            }
+
             
         }
         &:nth-child(even) {
             text-align: left;
+            animation: upanddown 0.5s infinite ease-in alternate;
+
 
         }
 
